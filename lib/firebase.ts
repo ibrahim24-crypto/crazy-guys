@@ -1,7 +1,7 @@
-import { initializeApp } from 'firebase/app';
-import { getAuth } from 'firebase/auth';
-import { getFirestore } from 'firebase/firestore';
-import { getStorage } from 'firebase/storage';
+import { initializeApp, type FirebaseApp } from 'firebase/app';
+import { getAuth, type Auth } from 'firebase/auth';
+import { getFirestore, type Firestore } from 'firebase/firestore';
+import { getStorage, type FirebaseStorage } from 'firebase/storage';
 
 const firebaseConfig = {
   apiKey: process.env.NEXT_PUBLIC_FIREBASE_API_KEY,
@@ -12,9 +12,30 @@ const firebaseConfig = {
   appId: process.env.NEXT_PUBLIC_FIREBASE_APP_ID,
 };
 
-const app = initializeApp(firebaseConfig);
-export const auth = getAuth(app);
-export const db = getFirestore(app);
-export const storage = getStorage(app);
+let app: FirebaseApp | null = null;
+
+function getFirebaseApp(): FirebaseApp {
+  if (!app) {
+    app = initializeApp(firebaseConfig);
+  }
+  return app;
+}
+
+export function getAuthInstance(): Auth {
+  return getAuth(getFirebaseApp());
+}
+
+export function getDbInstance(): Firestore {
+  return getFirestore(getFirebaseApp());
+}
+
+export function getStorageInstance(): FirebaseStorage {
+  return getStorage(getFirebaseApp());
+}
+
+// Legacy exports for backward compatibility — only work on client side
+export const auth = typeof window !== 'undefined' ? getAuthInstance() : undefined as unknown as Auth;
+export const db = typeof window !== 'undefined' ? getDbInstance() : undefined as unknown as Firestore;
+export const storage = typeof window !== 'undefined' ? getStorageInstance() : undefined as unknown as FirebaseStorage;
 
 export default app;
