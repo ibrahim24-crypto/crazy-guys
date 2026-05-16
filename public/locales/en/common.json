@@ -1,0 +1,126 @@
+{
+  "app": {
+    "title": "Crazy Guys",
+    "subtitle": "A Journey of Understanding"
+  },
+  "nav": {
+    "apology": "Apology",
+    "personal": "Personal Messages",
+    "rules": "Boundaries",
+    "gallery": "Gallery",
+    "chat": "Chat",
+    "settings": "Settings"
+  },
+  "landing": {
+    "welcome": "Crazy Guys",
+    "subtitle": "A Journey of Understanding",
+    "description": "This is a sincere space for reflection, apology, and rebuilding trust.",
+    "note": "A personal message to friends.",
+    "enter": "Enter",
+    "footer": "Made with intention and sincerity"
+  },
+  "login": {
+    "welcome": "Welcome",
+    "signIn": "Sign In with Google",
+    "unauthorized": "This page is private. Only authorized users can access.",
+    "subtitle": "A Journey of Understanding"
+  },
+  "apology": {
+    "title": "I'm Sorry",
+    "subtitle": "A sincere message to my friends",
+    "section1": {
+      "title": "Why I Made This",
+      "content": "I wanted to create a space to genuinely express my feelings, share what I've learned, and give you the opportunity to set boundaries that matter to you. This isn't about seeking forgiveness easily—it's about accountability and rebuilding trust."
+    },
+    "section2": {
+      "title": "What Happened",
+      "content": "At the picnic, I wasn't fully present. I was caught in my own thoughts and didn't recognize how my actions and words affected each of you. I took your patience for granted."
+    },
+    "section3": {
+      "title": "Why It Mattered",
+      "content": "You all matter to me. Your feelings, your time, and your trust are not things I should handle carelessly. The impact of that day showed me that I need to be more intentional and present in the moments I share with people I care about."
+    },
+    "section4": {
+      "title": "What I've Learned",
+      "content": "I've realized that friendship isn't about grand gestures—it's about showing up consistently, listening genuinely, and respecting boundaries. I'm committed to being better."
+    },
+    "section5": {
+      "title": "My Apology",
+      "content": "I'm genuinely sorry for letting you down. I apologize for not being fully present and for the hurt I caused. I want to work on rebuilding what might have been damaged and earn back the trust I know I need to rebuild."
+    },
+    "alreadyRead": "You've Already Read This",
+    "thankyou": "Thank you for taking the time to read my apology. Your understanding means a lot to me.",
+    "callToAction": "Now, you can set boundaries and share what matters to you.",
+    "setBoundaries": "Set Your Boundaries",
+    "goToRules": "View Your Boundaries"
+  },
+  "personal": {
+    "title": "Personal Messages",
+    "subtitle": "Individual reflections for each friend",
+    "cta": "Your thoughts and boundaries matter. Share them with me.",
+    "button": "Set Your Boundaries"
+  },
+  "rules": {
+    "title": "Set Your Boundaries",
+    "subtitle": "Define the rules and boundaries that matter to you",
+    "addNew": "Add a New Boundary",
+    "titlePlaceholder": "Rule title (e.g., Privacy, Respect, Honesty)",
+    "descriptionPlaceholder": "Description (e.g., Don't share my personal information)",
+    "priority": {
+      "low": "Low Priority",
+      "medium": "Medium Priority",
+      "high": "High Priority"
+    },
+    "button": "Add Boundary",
+    "saving": "Saving...",
+    "noRules": "No boundaries set yet. Create one to get started.",
+    "delete": "Delete"
+  },
+  "gallery": {
+    "title": "Shared Memories",
+    "subtitle": "A collection of moments we've shared",
+    "loading": "Loading gallery...",
+    "empty": "No memories yet. Come back soon."
+  },
+  "chat": {
+    "title": "Let's Talk",
+    "subtitle": "A space to express your feelings and thoughts",
+    "placeholder": "Type your message...",
+    "send": "Send",
+    "noMessages": "No messages yet. Start the conversation.",
+    "you": "You",
+    "me": "Me",
+    "typing": "typing..."
+  },
+  "settings": {
+    "title": "Settings",
+    "subtitle": "Manage your preferences",
+    "account": "Account",
+    "email": "Email",
+    "userId": "User ID",
+    "language": "Language",
+    "audio": "Audio",
+    "music": "Background Music",
+    "enabled": "Enabled",
+    "disabled": "Disabled",
+    "privacy": "Privacy & Security",
+    "privacyNote": "Your data is stored securely and encrypted. Only approved users can access this site.",
+    "encryption": "Sensitive data (rules, messages) are encrypted with AES-256.",
+    "logout": "Logout"
+  },
+  "button": {
+    "enter": "Enter",
+    "logout": "Logout",
+    "save": "Save",
+    "delete": "Delete",
+    "send": "Send",
+    "cancel": "Cancel",
+    "close": "Close"
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "success": "Success",
+    "confirm": "Are you sure?"
+  }
+}

@@ -1,0 +1,26 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Allow authenticated users to read/write their own apology status
+    match /apologyStatus/{userId} {
+      allow read, write: if request.auth != null && request.auth.uid == userId;
+    }
+
+    // Allow authenticated users to read/write messages (shared chat)
+    match /messages/{document=**} {
+      allow read, write: if request.auth != null;
+    }
+
+    // Allow authenticated users to read/write their own rules/boundaries
+    match /rules/{document=**} {
+      allow read, write: if request.auth != null && 
+        (request.auth.uid == resource.data.userId || 
+         resource == null && request.auth.uid == request.resource.data.userId);
+    }
+
+    // Default deny all other access
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}
