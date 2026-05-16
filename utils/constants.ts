@@ -2,7 +2,8 @@
 export const APPROVED_EMAILS = [
   'ibrahimezzine09@gmail.com',
   'charifa1210@gmail.com',
-  // Add the 2 remaining emails here when provided
+  'Rachidzouhir403@gmail.com',
+  // Add the remaining email here when provided
 ];
 
 // Site configuration
